@@ -5,13 +5,18 @@
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5"
   },
   "scripts": {
+    "flow": "flow",
+    "lint": "eslint 'src/*.{js,jsx}' --quiet",
+    "prettier": "prettier --single-quote --write \"src/**/*.js\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +26,20 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-react-app": "^3.0.6",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3",
+    "flow-bin": "^0.85.0",
+    "prettier": "^1.15.3",
+    "react-test-renderer": "^16.7.0"
+  }
 }
