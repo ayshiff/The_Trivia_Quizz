@@ -32,7 +32,6 @@ class App extends Component {
           <Context.Consumer>
             {({ SCORE, ERROR }) => (
               <header>
-                <h1>Header</h1>
                 <h1>Score: {SCORE}</h1>
                 <h1>Error: {ERROR}</h1>
               </header>
@@ -44,9 +43,7 @@ class App extends Component {
               <Route path="/categories/:name" component={CategoryContainer} />
             </div>
           </Router>
-          <footer>
-            <h1>Footer</h1>
-          </footer>
+          <footer />
         </div>
       </Context.Provider>
     );
