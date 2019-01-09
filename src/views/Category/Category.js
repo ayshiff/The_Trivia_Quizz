@@ -1,6 +1,6 @@
 // @flow
 
-import React from "react";
+import React from 'react';
 
 type Props = {
   categoryValues: Array<any>,
@@ -17,7 +17,7 @@ class Category extends React.Component<Props> {
     super(props);
     this.state = {
       questionId: 0,
-      responseValue: ""
+      responseValue: ''
     };
   }
 
@@ -35,7 +35,7 @@ class Category extends React.Component<Props> {
     if (response === categoryValues[questionId].answer) {
       if (categoryValues.length === questionId + 1) {
         // Redirect to home page
-        redirect.push("/");
+        redirect.push('/');
       } else {
         this.setState({ questionId: questionId + 1 });
       }
@@ -48,7 +48,7 @@ class Category extends React.Component<Props> {
       }
       if (categoryValues.length === questionId + 1) {
         // Redirect to home page
-        redirect.push("/");
+        redirect.push('/');
       } else {
         this.setState({ questionId: questionId + 1 });
       }
