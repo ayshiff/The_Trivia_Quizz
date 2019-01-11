@@ -18,6 +18,14 @@
     "eject": "react-scripts eject",
     "coverage": "react-scripts test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/**",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/src/serviceWorker.js",
+      "!<rootDir>/src/index.js"
+    ]
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -28,6 +36,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "chai": "^4.2.0",
     "coveralls": "^3.0.2",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
