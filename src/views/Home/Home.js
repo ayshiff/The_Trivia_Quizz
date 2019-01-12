@@ -11,7 +11,7 @@ type Parameters = {
 const Home = ({ categories, isLoading }: Parameters) => (
   <section>
     <h3>Choose a topic !</h3>
-    <hr></hr>
+    <hr />
     {!isLoading && (
       <div className="menuList">
         {categories.map(res => (
