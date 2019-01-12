@@ -29,14 +29,17 @@ class App extends Component {
     return (
       <Context.Provider value={this.state}>
         <div className="App">
-          <Context.Consumer>
+          <h1 className="appName">
+            <a href="/">Trivia</a>
+          </h1>
+          {/* <Context.Consumer>
             {({ SCORE, ERROR }) => (
               <header>
                 <h1>Score: {SCORE}</h1>
                 <h1>Error: {ERROR}</h1>
               </header>
             )}
-          </Context.Consumer>
+          </Context.Consumer> */}
           <Router>
             <div>
               <Route exact path="/" component={HomeContainer} />
