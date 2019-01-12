@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import HomeContainer from "../../views/Home/HomeContainer";
-import CategoryContainer from "../../views/Category/CategoryContainer";
-import "./App.css";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import HomeContainer from '../../views/Home/HomeContainer';
+import CategoryContainer from '../../views/Category/CategoryContainer';
+import './App.css';
 
 export const Context = React.createContext({
   SCORE: 0,
