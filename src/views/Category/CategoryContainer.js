@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
-import Category from "./Category";
-import { getCategoryById } from "../../helpers/api";
-import { Context } from "../../Components/App/App";
+import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import Category from './Category';
+import { getCategoryById } from '../../helpers/api';
+import { Context } from '../../Components/App/App';
 
 type State = {
   category: Array<any>
@@ -19,7 +19,7 @@ type Props = {
 class CategoryContainer extends Component<Props, State> {
   state = {
     category: [],
-    categoryTitle: ""
+    categoryTitle: ''
   };
 
   componentDidMount = async () => {
@@ -35,7 +35,7 @@ class CategoryContainer extends Component<Props, State> {
       });
     });
     // Save current category on LocalStorage
-    localStorage.setItem("category", name);
+    localStorage.setItem('category', name);
   };
 
   render() {

@@ -1,9 +1,9 @@
 // @flow
 
-import React, { Component } from "react";
-import Home from "./Home";
-import { getCategories } from "../../helpers/api";
-import { Context } from "../../Components/App/App";
+import React, { Component } from 'react';
+import Home from './Home';
+import { getCategories } from '../../helpers/api';
+import { Context } from '../../Components/App/App';
 
 type State = {
   categories: Array<any>,
