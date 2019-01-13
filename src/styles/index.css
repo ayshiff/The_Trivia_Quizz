@@ -39,7 +39,7 @@ h1.appName a {
 
 section {
   display: block;
-  width: 800px;
+  max-width: 800px;
   margin: auto;
 }
 
