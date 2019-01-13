@@ -1,6 +1,7 @@
 // @flow
 
 import React from 'react';
+import './category.css';
 
 type Props = {
   categoryValues: Array<any>,
@@ -61,9 +62,9 @@ class Category extends React.Component<Props> {
 
     return (
       <section>
-        <h1>Category Page: {title}</h1>
+        <h1>Category Page: {title}</h1><hr></hr>
         {categoryValues.length > 0 ? (
-          <div>
+          <div className="questionSection">
             <h2>{categoryValues[questionId].question}</h2>
             <input
               onChange={event =>
@@ -72,7 +73,7 @@ class Category extends React.Component<Props> {
               type="text"
             />
             <button onClick={() => this.checkResponse(responseValue)}>
-              Vérifier
+              Verify
             </button>
           </div>
         ) : null}
