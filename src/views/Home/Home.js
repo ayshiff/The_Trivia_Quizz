@@ -10,9 +10,10 @@ type Parameters = {
 
 const Home = ({ categories, isLoading }: Parameters) => (
   <section>
-    <h1>Home Page</h1>
+    <h3>Choose a category !</h3>
+    <hr />
     {!isLoading && (
-      <div>
+      <div className="menuList">
         {categories.map(res => (
           <li key={res.id}>
             <Link to={`categories/${res.id}`}>{res.title}</Link>
