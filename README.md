@@ -1,4 +1,6 @@
 # Trivia Quizz
+[![Coverage Status](https://coveralls.io/repos/github/ayshiff/The_Trivia_Quizz/badge.svg?branch=master)](https://coveralls.io/github/ayshiff/The_Trivia_Quizz?branch=master)
+[![CircleCI](https://circleci.com/gh/ayshiff/The_Trivia_Quizz/tree/master.svg?style=svg)](https://circleci.com/gh/ayshiff/The_Trivia_Quizz/tree/master)
 
 Clone the project :
 ```
